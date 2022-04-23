@@ -1,0 +1,83 @@
+@import "../../style/config";
+
+.description-container {
+  background-color: $light-blue-color;
+  padding: 1.5em;
+  border-radius: 0.5em;
+  margin: 1em 0;
+  font-size: 1em;
+  line-height: 2em;
+  color: #000;
+  font-weight: 400;
+  min-height: 30em;
+  @media (max-width: $breakpoint-very-small) {
+    padding: 1em;
+  }
+  h4 {
+    font-size: $font-size-16;
+    color: $heading-text-color;
+    font-weight: $weight-bold;
+    margin: 0 0 1em 0;
+    @media (max-width: $breakpoint-very-small) {
+      font-size: 1.2em;
+    }
+  }
+
+  .description-btn {
+    margin: 2em 0 0 0;
+    display: flex;
+    flex-direction: column;
+    button {
+      border: none;
+      background: transparent;
+      img {
+        background: transparent;
+      }
+    }
+    textarea {
+      border: 0.125em solid #44a2ab;
+      padding: 1em;
+      border-radius: 1em;
+      margin: 0 0.5em;
+      width: 70%;
+      height: 10em;
+      @media (max-width: $breakpoint-small) {
+        width: 90%;
+      }
+      @media (max-width: $breakpoint-medium-small) {
+        width: 80%;
+      }
+    }
+    .btn-save {
+      button {
+        padding: 0.3em 1.2em;
+        margin: 0.5em 0.5em 0.5em 0;
+        background-color: $green-color;
+        letter-spacing: 0.05em;
+        font-size: $font-size-13;
+        font-weight: $normal;
+        color: #fff;
+        border: none;
+        border-radius: 2em;
+        cursor: pointer;
+        text-transform: capitalize;
+      }
+    }
+    .descrition-update-btn {
+      display: flex;
+      margin: 0.5em 0 0 0;
+      button {
+        img {
+          background: transparent;
+          width: 1.5em;
+        }
+      }
+    }
+  }
+
+  .edit-icon {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+}

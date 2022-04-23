@@ -1,0 +1,14 @@
+@import "../../style/config";
+.logo {
+  img {
+    margin: 0 1em;
+    height: 45px;
+    width: auto;
+    display: block;
+    background-color: $white-color;
+
+    @media (max-width: $breakpoint-small) {
+      width: 180px;
+    }
+  }
+}

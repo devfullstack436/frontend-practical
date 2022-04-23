@@ -1,0 +1,12 @@
+@import "../../style/config";
+
+img {
+  width: 170px;
+  height: auto;
+  display: block;
+  background-color: $white-color;
+
+  @media (max-width: $breakpoint-small) {
+    width: 180px;
+  }
+}

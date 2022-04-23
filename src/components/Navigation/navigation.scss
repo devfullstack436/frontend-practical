@@ -1,0 +1,28 @@
+@import "../../style/config";
+
+.navigation-bar {
+  width: 20%;
+  display: flex;
+  padding: 0 1em;
+  flex-direction: column;
+  padding-top: 1em;
+
+  @media (max-width: $breakpoint-large) {
+    display: none;
+  }
+
+  a {
+    font-size: $font-size-16;
+    font-weight: $medium;
+    text-decoration: none;
+    padding: 0.7em 2em;
+    background-color: $light-blue-color;
+    margin: 0 0 0.5em 0;
+    border-radius: 0.5em;
+    color: $black-color;
+  }
+  a.active {
+    color: $white-color;
+    background-color: $black-color;
+  }
+}

@@ -1,0 +1,46 @@
+@import "../../style/config";
+
+.user-info-cover {
+  text-align: center;
+  padding: 2em 0;
+  .user-img {
+    width: 100%;
+    text-align: center;
+    img {
+      width: 50%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      border-radius: 20em;
+      margin: 0 auto;
+    }
+  }
+  h4 {
+    font-size: $font-size-18;
+    line-height: 1.5em;
+    font-weight: $semiBold;
+    color: $heading-text-color;
+    margin: 1em 0 0 0;
+  }
+  .company-details {
+    margin-top: 1em;
+    h5 {
+      font-size: $font-size-16;
+      font-weight: $medium;
+      color: $heading-text-color;
+      margin: 0 0 0.2em 0;
+      text-transform: capitalize;
+    }
+    h6 {
+      font-size: $font-size-14;
+      font-weight: $semiBold;
+      color: $heading-text-color;
+      margin: 0;
+    }
+    span {
+      font-size: $font-size-14;
+      font-weight: $normal;
+      color: $black-color;
+    }
+  }
+}

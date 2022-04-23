@@ -1,0 +1,102 @@
+@import "../../style/config";
+
+.product-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.5em;
+
+  @media (max-width: $breakpoint-large) {
+    width: 100%;
+  }
+  @media (max-width: $breakpoint-small) {
+    flex-direction: column;
+    display: block;
+    margin: 0.5em;
+  }
+
+  .product-container-left {
+    width: 70%;
+    padding: 1em;
+
+    @media (max-width: $breakpoint-small) {
+      width: auto;
+    }
+    .product-top-container {
+      width: 100%;
+      margin-bottom: 1em;
+
+      @media (max-width: $breakpoint-extra-large) {
+        flex-direction: column;
+      }
+
+      .product-img-container {
+        border-radius: 0.5em;
+        margin-bottom: 1em;
+        .img-container {
+          padding: 1em;
+          background-color: $white-color;
+          border-radius: 0.5em;
+        }
+        @media (max-width: $breakpoint-extra-large) {
+          width: auto;
+        }
+      }
+      .product-info-container {
+        background-color: $light-blue-color;
+        border-radius: 0.5em;
+        padding: 1em;
+        @media (max-width: $breakpoint-extra-large) {
+          margin-top: 1em;
+          width: auto;
+        }
+      }
+    }
+
+    .product-description-container {
+      border-radius: 0.5em;
+
+      .btn-cover {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+
+        button {
+          padding: 0.7em 1.5em;
+          margin: 0 1em 0 0;
+          background-color: $green-color;
+          letter-spacing: 0.05em;
+          font-size: $font-size-16;
+          font-weight: $medium;
+          color: #fff;
+          border: none;
+          border-radius: 0.5em;
+          cursor: pointer;
+          @media (max-width: $breakpoint-very-small) {
+            font-size: 0.875em;
+            padding: 0.5em 1em;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+  .product-container-right {
+    width: 30%;
+    border-radius: 0.5em;
+    margin: 1em;
+
+    @media (max-width: $breakpoint-small) {
+      width: auto;
+    }
+
+    .user-details {
+      margin: 0 0 2em 0;
+      background-color: $light-blue-color;
+      border-radius: 0.5em;
+    }
+    .map-details {
+      margin: 1em 0 0 0;
+    }
+  }
+}

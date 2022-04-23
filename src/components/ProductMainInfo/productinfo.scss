@@ -1,0 +1,54 @@
+@import "../../style/config";
+
+.product-info {
+  margin: 1em 0;
+  padding: 0 1em;
+  @media (max-width: $breakpoint-very-small) {
+    padding: 0;
+  }
+  h4 {
+    font-size: $font-size-22;
+    font-weight: $semiBold;
+    text-transform: capitalize;
+    margin: 0 0 0.2em 0;
+    @media (max-width: $breakpoint-very-small) {
+      font-size: 20px;
+    }
+  }
+  h5 {
+    font-size: $font-size-14;
+    font-weight: $semiBold;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 0 0 1em 0;
+  }
+  h6 {
+    font-size: $font-size-16;
+    font-weight: $weight-bold;
+    margin: 0 0 0.5em 0;
+    color: $heading-text-color;
+  }
+  input {
+    border: 0.125em solid #44a2ab;
+    padding: 0.5em 2em;
+    margin: 0 0 1em 0;
+    border-radius: 1em;
+    width: 20em;
+    max-width: 50%;
+  }
+  .edit-btn {
+    button {
+      padding: 0.3em 1.5em;
+      margin: 0.5em 0.5em 0.5em 0;
+      background-color: $green-color;
+      letter-spacing: 0.05em;
+      font-size: $font-size-13;
+      font-weight: $normal;
+      color: #fff;
+      border: none;
+      border-radius: 2em;
+      cursor: pointer;
+      text-transform: capitalize;
+    }
+  }
+}

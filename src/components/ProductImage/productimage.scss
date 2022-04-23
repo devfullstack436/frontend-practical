@@ -1,0 +1,53 @@
+@import "../../style/config";
+
+.img-container {
+  img {
+    width: 100%;
+    display: block;
+    border-radius: 0.5em;
+    object-fit: contain;
+    height: 20em;
+    border-radius: 0.5em;
+    @media (max-width: $breakpoint-small) {
+      height: 15em;
+    }
+    @media (max-width: $breakpoint-medium-small) {
+      height: 10em;
+    }
+  }
+  .image-edit {
+    border: none;
+    background: transparent;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    cursor: pointer;
+
+    img {
+      height: auto;
+      width: 1.5em;
+    }
+  }
+  .image-upload {
+    input {
+      font-size: 1em;
+      color: $green-color;
+    }
+    .upload-btn {
+      margin: 1em 0 0 0;
+      button {
+        padding: 0.3em 1.5em;
+        margin: 0.5em 0.5em 0.5em 0;
+        background-color: $green-color;
+        letter-spacing: 0.05em;
+        font-size: $font-size-13;
+        font-weight: $normal;
+        color: #fff;
+        border: none;
+        border-radius: 2em;
+        cursor: pointer;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
