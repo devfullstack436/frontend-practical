@@ -21,6 +21,17 @@ To run tests, run the following command
 ```
 
 
+## Screenshots
+
+APP_ID 1 
+
+![APP_ID1](https://github.com/devfullstack436/frontend-practical/blob/main/src/images/APP_ID1.png?raw=true)
+
+APP_ID 2
+
+![APP_ID1](https://github.com/devfullstack436/frontend-practical/blob/main/src/images/APP_ID2.png?raw=true)
+
+
 
 ## Demo
 
